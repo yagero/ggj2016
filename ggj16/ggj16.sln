@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{B3C82F13-3ACC-7DBA-1F92-49170D717732}") = "ggj16", "Assembly-CSharp-firstpass.csproj", "{F623072D-2406-BBD8-AD42-7CEB8C818425}"
+EndProject
+Project("{B3C82F13-3ACC-7DBA-1F92-49170D717732}") = "ggj16", "Assembly-CSharp.csproj", "{DF5B9580-549A-833E-05E1-5FE4810AE773}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F623072D-2406-BBD8-AD42-7CEB8C818425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F623072D-2406-BBD8-AD42-7CEB8C818425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F623072D-2406-BBD8-AD42-7CEB8C818425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F623072D-2406-BBD8-AD42-7CEB8C818425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5B9580-549A-833E-05E1-5FE4810AE773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5B9580-549A-833E-05E1-5FE4810AE773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5B9580-549A-833E-05E1-5FE4810AE773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5B9580-549A-833E-05E1-5FE4810AE773}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
