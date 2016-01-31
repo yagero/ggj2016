@@ -39,7 +39,7 @@ public class GameManager : Singleton<GameManager>
 
         if (rhythmGame.gameObject == ThePot.gameObject)
         {
-            GameWon();
+			StartCoroutine(GameWon());
         }
     }
 
@@ -48,9 +48,13 @@ public class GameManager : Singleton<GameManager>
         ThePot.EnableGameplay();
     }
 
-    private void GameWon()
+	private IEnumerator GameWon()
     {
         // PUT GAME WON CODE HERE
         print("GAME WON!");
+		GetComponent<AudioSource> ().clip = last;
+		GetComponent<AudioSource> ().Play();
+		yield return new WaitForSeconds(GetComponent<AudioSource> ().clip.length + 1);
+		Application.LoadLevel ("Ending");
     }
 }
