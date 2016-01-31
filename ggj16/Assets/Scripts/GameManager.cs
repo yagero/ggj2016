@@ -2,8 +2,16 @@
 using UnityEngine.UI;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class GameManager : Singleton<GameManager>
 {
+
+	//sounds
+	public AudioClip first;
+	public AudioClip second;
+	public AudioClip third;
+	public AudioClip last;
+
     public bool DevPickUpItemsImmediately = false;
 
     public GameObject SliderTimerMarkerGAO;
@@ -26,6 +34,8 @@ public class GameManager : Singleton<GameManager>
     public void Start()
     {
         // Disable the pot GamePlay
+		GetComponent<AudioSource> ().clip = first;
+		GetComponent<AudioSource> ().Play();
     }
 
     public void PickUpItem(RhythmGame rhythmGame)
@@ -36,6 +46,16 @@ public class GameManager : Singleton<GameManager>
         {
             UnlockThePot();
         }
+
+		if (ItemPickedCount == 2) {
+			GetComponent<AudioSource> ().clip = second;
+			GetComponent<AudioSource> ().Play();
+		}
+
+		if (ItemPickedCount == 3) {
+			GetComponent<AudioSource> ().clip = third;
+			GetComponent<AudioSource> ().Play();
+		}
 
         if (rhythmGame.gameObject == ThePot.gameObject)
         {
