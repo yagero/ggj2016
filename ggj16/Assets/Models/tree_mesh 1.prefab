@@ -13,7 +13,7 @@ GameObject:
   - 95: {fileID: 9530370}
   - 65: {fileID: 6541202}
   m_Layer: 0
-  m_Name: tree_mesh
+  m_Name: tree_mesh 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

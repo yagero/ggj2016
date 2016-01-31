@@ -11,9 +11,9 @@ public class IngredientColor : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		color.g = 185f;
-		color.r = 185f;
-		color.b = 185f;
+		color.g = 0f;
+		color.r = 0f;
+		color.b = 0f;
 		//calculateDistance ();
 		colorChanging = false;
 
@@ -50,25 +50,9 @@ public class IngredientColor : MonoBehaviour {
 
 
 	IEnumerator changeColorBright(){
-		if (itemName == "Model1") {
-			color.g = color.g - (float)5f;
-			color.r = color.r - (float)5f;
-		}
-
-		if (itemName == "Model2") {
-			color.g = color.g - (float)5f;
-			color.b = color.b - (float)5f;
-		}
-
-		if (itemName == "Model3") {
-			color.r = color.r - (float)5f;
-			color.b = color.b - (float)5f;
-		}
-
-		if (itemName == "Model4") {
-			color.r = color.r - (float)5f;
-			color.g = color.g - (float)5f;
-		}
+		color.g = color.g + (float)5f;
+		color.r = color.r + (float)5f;
+		color.b = color.b + (float)5f;
 
 		GetComponent<Renderer> ().material.color = new Color (color.r/255, color.g/255, color.b/255);
 		yield return new WaitForSeconds (0.5f);
@@ -76,25 +60,10 @@ public class IngredientColor : MonoBehaviour {
 	}
 
 	IEnumerator changeColorDark(){
-		if (itemName == "Model1") {
-			color.g = color.g + (float)5f;
-			color.r = color.r + (float)5f;
-		}
+		color.g = color.g - (float)5f;
+		color.r = color.r - (float)5f;
+		color.b = color.b - (float)5f;
 
-		if (itemName == "Model2") {
-			color.g = color.g + (float)5f;
-			color.b = color.b + (float)5f;
-		}
-
-		if (itemName == "Model3") {
-			color.r = color.r + (float)5f;
-			color.b = color.b + (float)5f;
-		}
-
-		if (itemName == "Model4") {
-			color.r = color.r + (float)5f;
-			color.g = color.g + (float)5f;
-		}
 		GetComponent<Renderer> ().material.color = new Color (color.r/255, color.g/255, color.b/255);
 		yield return new WaitForSeconds (0.5f);
 		colorChanging = false;

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 57d0068a5e2da2547a8b637f707fd0a4
-timeCreated: 1454163492
+guid: a5582c752dc0e5d439b39765ee38fc84
+timeCreated: 1454237325
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCylinder1
+    4300000: mushroom2_mesh
     9500000: //RootNode
   materials:
     importMaterials: 1
