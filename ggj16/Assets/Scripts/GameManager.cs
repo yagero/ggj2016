@@ -47,7 +47,9 @@ public class GameManager : Singleton<GameManager>
     {
         ItemPickedCount++;
 
-        if (ItemPickedCount >= TotalItemsToUnlockThePot)
+        bool gameIsWon = (rhythmGame.gameObject == ThePot.gameObject);
+
+        if (ItemPickedCount >= TotalItemsToUnlockThePot && !gameIsWon)
         {
 			StartCoroutine(UnlockThePot());
         }
@@ -62,7 +64,7 @@ public class GameManager : Singleton<GameManager>
 			GetComponent<AudioSource> ().Play();
 		}
 
-        if (rhythmGame.gameObject == ThePot.gameObject)
+        if (gameIsWon)
         {
 			StartCoroutine(GameWon());
         }
