@@ -5,6 +5,9 @@ using System.Collections;
 [RequireComponent(typeof(AudioSource))]
 public class GameManager : Singleton<GameManager>
 {
+	//Cauldron panel
+	private GameObject panel;
+
 
 	//sounds
 	public AudioClip first;
@@ -36,6 +39,8 @@ public class GameManager : Singleton<GameManager>
         // Disable the pot GamePlay
 		GetComponent<AudioSource> ().clip = first;
 		GetComponent<AudioSource> ().Play();
+
+		panel =  GameObject.Find("Cauldron");
     }
 
     public void PickUpItem(RhythmGame rhythmGame)
@@ -44,7 +49,7 @@ public class GameManager : Singleton<GameManager>
 
         if (ItemPickedCount >= TotalItemsToUnlockThePot)
         {
-            UnlockThePot();
+			StartCoroutine(UnlockThePot());
         }
 
 		if (ItemPickedCount == 2) {
@@ -63,9 +68,16 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    private void UnlockThePot()
+	private IEnumerator UnlockThePot()
     {
+		panel.GetComponent<CanvasGroup>().alpha = 1;
+		panel.GetComponent<CanvasGroup>().interactable = true;
+		panel.GetComponent<CanvasGroup>().blocksRaycasts = true;
         ThePot.EnableGameplay();
+		yield return new WaitForSeconds(2);
+		panel.GetComponent<CanvasGroup>().alpha =0;
+		panel.GetComponent<CanvasGroup>().interactable = false;
+		panel.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
 	private IEnumerator GameWon()
