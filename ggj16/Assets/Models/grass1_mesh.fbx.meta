@@ -1,15 +1,37 @@
 fileFormatVersion: 2
-guid: 2130c84bad8c7ec4f85c4d998cc1b5c2
-timeCreated: 1454234896
+guid: 942480554b4c3b34a9d938c99b5b1921
+timeCreated: 1454234996
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: polySurface13
+    100000: Gras1_mesh
+    100002: //RootNode
+    100004: pPlane19
+    100006: pPlane20
+    100008: pPlane21
+    100010: pPlane22
+    100012: pPlane23
+    100014: transform17
+    100016: transform18
+    100018: transform19
+    100020: transform20
+    100022: transform21
+    400000: Gras1_mesh
+    400002: //RootNode
+    400004: pPlane19
+    400006: pPlane20
+    400008: pPlane21
+    400010: pPlane22
+    400012: pPlane23
+    400014: transform17
+    400016: transform18
+    400018: transform19
+    400020: transform20
+    400022: transform21
+    2300000: Gras1_mesh
+    3300000: Gras1_mesh
+    4300000: Gras1_mesh
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -35,7 +57,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 2
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
