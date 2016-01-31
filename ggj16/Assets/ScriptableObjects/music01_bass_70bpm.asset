@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44ad881071734b6cb848a838d10f77b, type: 3}
+  m_Name: music01_bass_70bpm
+  m_EditorClassIdentifier: 
+  Keys:
+  - TimeInMillisec: 420
+    KeyId: 0
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 850
+    KeyId: 1
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 1280
+    KeyId: 0
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 1710
+    KeyId: 1
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 2140
+    KeyId: 0
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 2570
+    KeyId: 1
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 3000
+    KeyId: 0
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 3420
+    KeyId: 2
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 3850
+    KeyId: 0
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 4280
+    KeyId: 2
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 4710
+    KeyId: 0
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 5140
+    KeyId: 3
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 5570
+    KeyId: 0
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 6000
+    KeyId: 3
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 6420
+    KeyId: 4
+    SliderMarkerImage: {fileID: 0}
+  - TimeInMillisec: 6850
+    KeyId: 5
+    SliderMarkerImage: {fileID: 0}
+  AudioClip: {fileID: 8300000, guid: 94314e21929a240c9bc06ed8404ffe74, type: 3}

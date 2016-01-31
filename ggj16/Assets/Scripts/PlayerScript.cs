@@ -17,11 +17,11 @@ public class PlayerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey ("up")) {
+		if (Input.GetKey ("up") || Input.GetKey ("w")) {
 			var tZ = Time.deltaTime * speed;
 			transform.Translate(0,0,tZ);
 		}
-		if (Input.GetKey ("down")) {
+		if (Input.GetKey ("down") || Input.GetKey ("s")) {
 			var tZ = Time.deltaTime * speed;
 			transform.Translate(0,0,-tZ);
 		}
