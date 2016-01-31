@@ -65,14 +65,14 @@ public class KeyList : ScriptableObject
     public Key[] Keys;
     public AudioClip AudioClip;
    
-
+#if UNITY_EDITOR
     [MenuItem("Assets/Create/KeyList")]
     public static void Create()
     {
         var item = ScriptableObject.CreateInstance<KeyList>();
         ProjectWindowUtil.CreateAsset(item, "NewKeyList.asset");
     }
-
+#endif
 
     public void Reset()
     {
