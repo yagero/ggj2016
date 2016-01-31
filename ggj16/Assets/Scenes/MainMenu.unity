@@ -1185,7 +1185,10 @@ MonoBehaviour:
   m_Text: 'Walk around the forest using your mouse and WASD.
 
 
-    Collect ingredients by solving sound puzzles with your number keys.'
+    Collect ingredients by solving sound puzzles with your number keys.
+
+
+    Play with a headset or headphones for a better experience.'
 --- !u!222 &1699393410
 CanvasRenderer:
   m_ObjectHideFlags: 0
