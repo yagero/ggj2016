@@ -4,8 +4,6 @@ using System.Collections;
 
 public class GameManager : Singleton<GameManager>
 {
-    public bool DevPickUpItemsImmediately = false;
-
     public GameObject SliderTimerMarkerGAO;
     public GameObject HUD;
     public RectTransform FullTimeline;

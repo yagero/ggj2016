@@ -119,9 +119,7 @@ public class RhythmGame : MonoBehaviour
             m_AudioSource.time = 0f;
 
             StartGameplay();
-
-            if(GameManager.Instance.DevPickUpItemsImmediately)
-                StopGameplay(true);
+        //    StopGameplay(true);
         }
     }
 
