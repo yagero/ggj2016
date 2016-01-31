@@ -734,7 +734,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f5aee92f10cf15947b7e722e22457d48, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1be14b990e752eb40a962fa71571d70d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -854,7 +854,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f5aee92f10cf15947b7e722e22457d48, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1be14b990e752eb40a962fa71571d70d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1182,7 +1182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Walk around the forrest by using your mouse and WASD.
+  m_Text: 'Walk around the forest using your mouse and WASD.
 
 
     Collect ingredients by solving sound puzzles with your number keys.'

@@ -327,9 +327,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383eb640185c79347b9ebc4f0cc4739d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSentence: {fileID: 8300000, guid: 87d9fd822091a4e469d4909838327267, type: 3}
-  secondSentence: {fileID: 8300000, guid: ad2c106520d63ce46bd96dd6fb960755, type: 3}
-  thirdSentence: {fileID: 8300000, guid: e6778505034499645944d67a56778deb, type: 3}
+  firstSentence: {fileID: 8300000, guid: 50f713f2e76abfd4a8a35a8c30edb03b, type: 3}
+  secondSentence: {fileID: 8300000, guid: 698c7e147d9e09a4781b3e6672d7f151, type: 3}
+  thirdSentence: {fileID: 8300000, guid: 8eb0032af0c2e08468cd5bec3ae90da6, type: 3}
   images:
   - {fileID: 21300000, guid: 9e07227c693c68e4881f59094a4ffd6c, type: 3}
   - {fileID: 21300000, guid: fc0c1b8dfebee324cb05aab0d5acac49, type: 3}
