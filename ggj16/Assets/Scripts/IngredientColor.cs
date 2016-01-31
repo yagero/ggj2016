@@ -17,8 +17,9 @@ public class IngredientColor : MonoBehaviour {
 		//calculateDistance ();
 		colorChanging = false;
 
+		itemName = gameObject.name;
 
-		Debug.Log(name);
+		Debug.Log(itemName);
 
 		player = GameObject.FindGameObjectWithTag("MainCamera");
 	}
@@ -49,17 +50,51 @@ public class IngredientColor : MonoBehaviour {
 
 
 	IEnumerator changeColorBright(){
-		color.g = color.g - (float)5f;
-		color.b = color.b - (float)5f;
-		Debug.Log (color.g);
+		if (itemName == "Model1") {
+			color.g = color.g - (float)5f;
+			color.r = color.r - (float)5f;
+		}
+
+		if (itemName == "Model2") {
+			color.g = color.g - (float)5f;
+			color.b = color.b - (float)5f;
+		}
+
+		if (itemName == "Model3") {
+			color.r = color.r - (float)5f;
+			color.b = color.b - (float)5f;
+		}
+
+		if (itemName == "Model4") {
+			color.r = color.r - (float)5f;
+			color.g = color.g - (float)5f;
+		}
+
 		GetComponent<Renderer> ().material.color = new Color (color.r/255, color.g/255, color.b/255);
 		yield return new WaitForSeconds (0.5f);
 		colorChanging = false;
 	}
 
 	IEnumerator changeColorDark(){
-		color.g = color.g + (float)5f;
-		color.b = color.b + (float)5f;
+		if (itemName == "Model1") {
+			color.g = color.g + (float)5f;
+			color.r = color.r + (float)5f;
+		}
+
+		if (itemName == "Model2") {
+			color.g = color.g + (float)5f;
+			color.b = color.b + (float)5f;
+		}
+
+		if (itemName == "Model3") {
+			color.r = color.r + (float)5f;
+			color.b = color.b + (float)5f;
+		}
+
+		if (itemName == "Model4") {
+			color.r = color.r + (float)5f;
+			color.g = color.g + (float)5f;
+		}
 		GetComponent<Renderer> ().material.color = new Color (color.r/255, color.g/255, color.b/255);
 		yield return new WaitForSeconds (0.5f);
 		colorChanging = false;
